@@ -28,6 +28,10 @@ class AdapterUser (private var datauser : List<GetDataUserResponseItem>): Recycl
         Glide.with(holder.itemView.context)
             .load(datauser!![position].image)
             .into(holder.itemView.img_user)
+
+//        holder.itemView.onclick_user.setOnClickListener {
+//            onclick(datauser!![position])
+//        }
     }
 
     override fun getItemCount(): Int {

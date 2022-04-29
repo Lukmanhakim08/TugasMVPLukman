@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity(), UserInterface {
         rv_user.adapter = AdapterUser(user)
     }
 
+
     override fun onError(pesan: String) {
         Toast.makeText(this, pesan, Toast.LENGTH_SHORT).show()
     }
